@@ -1,0 +1,57 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Assignment #1: Portfolio (Home)</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navList">
+            <li><span><a href="Home Page.html">Home</a></span></li>
+            <li><span><a href="About Me.html" class="active">About Me</a></span></li>
+            <li><span><a href="Projects.html">Projects</a></span></li>
+            <li><span><a href="Contact Me.html">Contact</a></span></li>
+        </nav>
+    </header>
+
+    <main>
+        <article class="aboutme">
+            <img src="images/Profile.png" alt="Photo of Casey Panganiban" class="profilep">
+            <div class= "row2">
+                <div class = "column2">
+                    <p><b>About Me:</b><br>Hello, my name is Casey Panganiban, a 3rd Year Ontario Tech University student currently enrolled in Technology Management. 
+                        I enjoy drawing, travelling, rock climbing, golf, and playing videogames.</p>
+                </div>
+                <div class = "column2">
+                    <video id="myvid" controls poster="images/videop.png" preload ="auto" width="600">
+                        <source src="Videos/video.mp4" type="video/mp4">
+                        <source src="Videos/video.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div>
+                <br>
+                    <button onclick="playPause()">Play/Pause</button>
+                <br>
+            </div>
+            <script> 
+                var vid = document.getElementById("myvid"); 
+                function playPause() { 
+                    if (vid.paused) 
+                        vid.play(); 
+                    else 
+                        vid.pause(); 
+                } 
+                </script> 
+        </article>
+    </main>
+
+    <footer>
+        <p>Caseyethan.panganiban@ontariotechu.net | Copyright © 2024 Casey Panganiban. All rights reserved</p>
+    </footer>
+</body>
+</html>

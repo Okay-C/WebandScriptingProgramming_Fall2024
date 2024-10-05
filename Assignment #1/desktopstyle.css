@@ -1,0 +1,18 @@
+@media (max-width: 480px) {
+    body {
+      padding: 10px; /* Add some padding to the body */
+    }
+  
+    .column {
+      max-width: 100%; /* Full-width columns on small screens */
+      padding: 15px; /* Slightly smaller padding for mobile */
+    }
+  
+    .about-me {
+      font-size: 1rem; /* Smaller font size for mobile */
+    }
+  
+    video {
+      max-width: 100%; /* Ensure video fits smaller screens */
+    }
+  }

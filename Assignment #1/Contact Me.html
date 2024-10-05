@@ -1,0 +1,45 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Assignment #1: Portfolio (Home)</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navList">
+            <li><span><a href="Home Page.html">Home</a></span></li>
+            <li><span><a href="About Me.html">About Me</a></span></li>
+            <li><span><a href="Projects.html">Projects</a></span></li>
+            <li><span><a href="Contact Me.html" class="active">Contact</a></span></li>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contactform">
+            <h2>Contact Me</h2>
+            <form name="contactForm" action="#" method="post" onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your Email" name="email" required>
+
+                <label for="phone">Cell Number:</label>
+                <input type="tel" id="phone" placeholder="Your Cellphone #" name="phone" pattern="\d{10}" required>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="5"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Caseyethan.panganiban@ontariotechu.net | Copyright © 2024 Casey Panganiban. All rights reserved</p>
+    </footer>
+</body>
+</html>
